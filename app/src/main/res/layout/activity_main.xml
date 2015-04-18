@@ -3,17 +3,25 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#c81b4c52"
+    android:clickable="false">
 
     <TextView
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Organ Trail"
         android:id="@+id/titleTxt"
-        android:layout_marginTop="127dp"
+        android:layout_marginTop="124dp"
+        android:autoText="false"
+        android:textAlignment="center"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textIsSelectable="true"
+        android:textSize="70dp"
+        android:textColor="#fffff6f6" />
 
     <Button
         android:layout_width="wrap_content"
@@ -23,6 +31,7 @@
         android:layout_below="@+id/titleTxt"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="130dp"
-        android:nestedScrollingEnabled="false" />
+        android:nestedScrollingEnabled="false"
+        android:clickable="true" />
 
 </RelativeLayout>
